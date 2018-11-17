@@ -14,3 +14,52 @@
 .rm-navbar-max {
     display: none;
 }
+
+.wrap-all {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.my-navbar {
+    margin: 40px;
+}
+
+.my-navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.my-navbar li a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text a {
+    position: absolute;
+    margin-top: 120px;
+    font-size: 37px;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.byline {
+    background-color: rgb(247, 247, 247);
+    padding: 15px;
+    width: 500px;
+    box-shadow: 1px 1px 2px 1px;
+}
+
+.footer-column {
+    width: 30%;
+    padding: 13px;
+    float: left;
+    border: 1px solid rgb(185, 185, 185);
+    margin: 4px;
+}

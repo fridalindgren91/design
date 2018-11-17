@@ -16,10 +16,27 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Testsida
 =========================
 
-Denna kursen heter Teknisk webbdesign och användbarhet. Vi kommer få kika lite närmare på css och design i denna kursen genom att bygga vidare på 
-denna webbplats.
+På denna sidan kan jag testa runt lite med html, markdown och css.
 
-[FIGURE src=image/code.jpg?w=400 caption="Bild på kod och tangentbord"]
+<h1>Testar en h1 rubrik med taggar.</h1>
+
+#Testar en h1 rubrik med markdown.
+
+Lista i markdown
+
+1. Första
+2. Andra
+3. Tredje
+
+Lista i html
+
+<ol>
+    <li>Första</li>
+    <li>Andra</li>
+    <li>Tredje</li>
+</ol>
+
+[FIGURE src=image/theme/dogs.jpg?w=400 caption="Bild på min hund Pussel"]
