@@ -63,3 +63,7 @@ li a {
     border: 1px solid rgb(185, 185, 185);
     margin: 4px;
 }
+
+.clearfix {
+    clear: both;
+}

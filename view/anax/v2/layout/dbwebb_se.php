@@ -270,7 +270,9 @@ $class .= empty($class) ? "" : "has-sidebar";
 
 
 
-<!-- sitefooter -->
+</div> <!-- end of wrapper -->
+
+<!-- sitefooter (FLYTTAD FRÅN WRAP ALL) -->
 <?php if (regionHasContent("footer")) : ?>
 <div class="outer-wrap outer-wrap-footer" role="contentinfo">
     <div class="inner-wrap inner-wrap-footer">
@@ -282,12 +284,6 @@ $class .= empty($class) ? "" : "has-sidebar";
     </div>
 </div>
 <?php endif; ?>
-
-
-
-</div> <!-- end of wrapper -->
-
-
 
 <!-- render javascripts -->
 <?php if (isset($javascripts)) : ?>
