@@ -81,10 +81,6 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
 
 <body <?= classList($bodyClass, $route) ?>>
 
-<!-- wrapper around all items on page -->
-<div class="wrap-all">
-
-
 
 <!-- siteheader with optional columns -->
 <?php if (regionHasContent("header") || regionHasContent("header-col-1")) : ?>
@@ -139,6 +135,10 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
     </div>
 </div>
 <?php endif; ?>
+
+
+<!-- wrapper around all items on page -->
+<div class="wrap-all">
 
 
 
