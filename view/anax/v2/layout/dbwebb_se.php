@@ -134,6 +134,7 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
 <?php endif; ?>
 
 

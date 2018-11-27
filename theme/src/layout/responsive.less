@@ -2,8 +2,52 @@
  * Layout for responsive style through media queries.
  */
 
-@media screen and (max-width: 1500px) {
-    .site-logo {
-        display: none;
+// @media screen and (max-width: 1500px) {
+//     .site-logo {
+//         display: none;
+//     }
+// }
+
+@media screen and (max-width: 1400px) {
+    .my-navbar li a {
+        font-size: 22px;
+    }
+    .site-logo-text a {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .site-logo-text a {
+        font-size: 25px;
+    }
+    .rm-desktop li {
+        display: initial !important;
+    }
+    .rm-desktop li a {
+        padding: 1px;
+        font-size: 20px;
+    }
+    .rm-desktop li ul {
+        background-color: pink;
+        top: 0;
+        border: rgb(88, 88, 88) solid 1px;
+    }
+    .rm-desktop li ul li a {
+        background-color: pink !important;
+        padding: 5px;
+    }
+    .region-header-col-2 {
+        margin-left: 25%;
+    }
+    .inner-wrap-header {
+        height: 245px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .rm-max {
+        display: initial;
     }
 }

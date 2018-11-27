@@ -4417,14 +4417,60 @@ li a {
 /**
  * General layout
  */
+/**
+ * Logo
+ */
+.site-logo img {
+  width: 50%;
+}
+.site-logo-text a {
+  margin-top: 100px;
+}
+/**
+ * Header
+ */
+.inner-wrap-header {
+  max-width: 100%;
+  background-color: #fff8fc;
+  height: 155px;
+}
+.region-header-col-1 {
+  width: 20%;
+  float: left;
+}
+.region-header-col-2 {
+  float: left;
+}
+/**
+ * Menu
+ */
+.rm-max {
+  display: none;
+}
+.rm-desktop li a {
+  background-color: #fff8fc !important;
+}
+/**
+ * Content
+ */
 .wrap-all {
   background-color: #fff8fc;
   width: 80%;
   margin: 0 auto;
 }
-.inner-wrap-header {
-  max-width: 100%;
+.outer-wrap-main {
+  padding: 2%;
 }
+/**
+ *
+ * Byline
+ */
+.byline {
+  width: 70%;
+}
+/**
+ * Footer
+ */
 .region-footer {
   padding-top: 20px;
 }
@@ -4447,9 +4493,44 @@ li a {
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
-  .site-logo {
-    display: none;
+@media screen and (max-width: 1400px) {
+  .my-navbar li a {
+    font-size: 22px;
+  }
+  .site-logo-text a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .site-logo-text a {
+    font-size: 25px;
+  }
+  .rm-desktop li {
+    display: initial !important;
+  }
+  .rm-desktop li a {
+    padding: 1px;
+    font-size: 20px;
+  }
+  .rm-desktop li ul {
+    background-color: pink;
+    top: 0;
+    border: #585858 solid 1px;
+  }
+  .rm-desktop li ul li a {
+    background-color: pink !important;
+    padding: 5px;
+  }
+  .region-header-col-2 {
+    margin-left: 25%;
+  }
+  .inner-wrap-header {
+    height: 245px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .rm-max {
+    display: initial;
   }
 }
 /**
