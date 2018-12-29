@@ -1,0 +1,235 @@
+/**
+ * Layout using vgrid
+ */
+
+ /**
+ * Variables
+ */
+
+ /**
+ * General layout
+ */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**
+ * General content
+ */
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+}
+
+.wrap-all {
+    background-color: rgb(255, 248, 252);
+    //width: 80%;
+    //margin: 0 auto;
+    //max-width: 1100px;
+}
+
+.outer-wrap-main {
+    //padding: 2%;
+}
+
+.inner-wrap {
+    //max-width: 1100px;
+    //margin: 0 auto;
+    #desinax-vgrid.grid(1100px);
+}
+
+/**
+ * Redovisningssida
+ */
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+/**
+ * Sidebars
+ */
+
+.region-sidebar-right,
+.region-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+}
+
+/**
+ * Logo
+ */
+.site-logo img {
+    //width: 50%;
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(6);
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.site-logo-text a {
+    //position: absolute;
+    //margin-top: 120px;
+    font-size: 37px;
+    text-decoration: none;
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.push(-18);
+}
+
+/**
+ * Header
+ */
+
+.region-header {
+    //#desinax-vgrid.grid(100%);
+}
+
+.inner-wrap-header {
+    //max-width: 100%;
+    //background-color: rgb(255, 248, 252);
+    //height: 250px;
+    #desinax-vgrid.grid(1300px);
+}
+
+.inner-wrap-header a {
+    font-size: 22px;
+}
+
+.outer-wrap-header {
+    #desinax-vgrid.grid(18);
+}
+
+.region-header-col-1, .region-header-col-3 {
+    //width: 20%;
+    //float: left;
+}
+
+.region-header-col-1 {
+    #desinax-vgrid.column(6);
+}
+
+.region-header-col-2 {
+    //float: left;
+    #desinax-vgrid.column(14);
+}
+
+.region-flash img {
+    width: 100%;
+}
+
+/**
+
+ * Menu
+ */
+.rm-max {
+    display: none;
+}
+
+.rm-desktop li a {
+    background-color: rgb(255, 248, 252) !important;
+}
+
+.my-navbar {
+    //margin: 40px;
+}
+
+.my-navbar li {
+    display: inline;
+    //margin-right: 20px;
+}
+
+.my-navbar li a {
+    text-decoration: none;
+    //font-size: 25px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/**
+ *
+ * Byline
+ */
+.byline {
+    background-color: rgb(247, 247, 247);
+    //padding: 15px;
+    //width: 70%;
+    box-shadow: 1px 1px 2px 1px;
+}
+
+/**
+ * Footer
+ */
+
+footer {
+    #desinax-vgrid.column(@columns);
+}
+
+.region-footer {
+    //padding-top: 20px;
+}
+
+.footer-column {
+    height: 120px;
+    //width: 30%;
+    //padding: 13px;
+    //float: left;
+    //border: 1px solid rgb(185, 185, 185);
+    //margin: 4px;
+    color: #cacaca;
+    #desinax-vgrid.column(@columns / 3 - 1);
+    #desinax-vgrid.push(1);
+}
+
+.site-footer {
+    color: #cacaca;
+    #desinax-vgrid.column(@columns);
+    #desinax-vgrid.push(1);
+}
+
+.inner-wrap-footer {
+    #desinax-vgrid.grid(1100px);
+}
+
+.outer-wrap-footer {
+    background-color: black;
+    height: 100%;
+}
+
+/**
+ * Vertical grid special
+ */
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
