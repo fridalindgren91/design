@@ -67,6 +67,8 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
     <link rel="icon" href="<?= asset($favicon) ?>">
     <?php endif; ?>
 
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|IM+Fell+English+SC|Julius+Sans+One|Ribeye+Marrow|Rock+Salt|Rye|Thasadith" rel="stylesheet">
+
     <?php if (isset($stylesheets)) : ?>
         <?php foreach ($stylesheets as $stylesheet) : ?>
             <link rel="stylesheet" type="text/css" href="<?= asset($stylesheet) ?>">

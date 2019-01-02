@@ -4324,6 +4324,9 @@ template {
  * Typographic font families to choose from.
  */
 /**
+ * Google fonts
+ */
+/**
  * Typographic defaults.
  */
 #desinax-hgrid {
@@ -4421,7 +4424,7 @@ img {
  * General layout
  */
 ul {
-  list-style-type: none;
+  list-style-type: none !important;
 }
 a {
   text-decoration: none;
@@ -4492,10 +4495,11 @@ a {
 .site-logo img {
   display: inline;
   float: left;
-  width: 48.95833333%;
+  width: 53.125%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 25.52083333%;
+  padding-top: 10%;
 }
 .site-logo-text-icon {
   display: none;
@@ -4505,10 +4509,10 @@ a {
   text-decoration: none;
   display: inline;
   float: left;
-  width: 23.95833333%;
+  width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  margin-left: -74.47916667%;
+  margin-left: -66.14583333%;
 }
 /**
  * Header
@@ -4516,7 +4520,7 @@ a {
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1300px;
+  max-width: 80%;
 }
 .inner-wrap-header a {
   font-size: 22px;
@@ -4529,7 +4533,7 @@ a {
 .region-header-col-1 {
   display: inline;
   float: left;
-  width: 23.95833333%;
+  width: 15.625%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
@@ -4654,14 +4658,8 @@ footer {
   .my-navbar li a {
     font-size: 22px;
   }
-  .site-logo-text a {
-    font-size: 30px;
-  }
 }
 @media screen and (max-width: 1250px) {
-  .site-logo-text a {
-    font-size: 25px;
-  }
   .rm-desktop li {
     display: initial !important;
   }
@@ -4677,7 +4675,10 @@ footer {
     background-color: pink !important;
   }
   .inner-wrap-header {
-    height: 245px;
+    height: 420px !important;
+  }
+  .wrap-all {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -4703,7 +4704,7 @@ footer {
     width: 7.29166667%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
-    margin-left: -74.47916667%;
+    margin-left: -66.14583333%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -4753,6 +4754,9 @@ footer {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
     margin-left: -74.47916667%;
+  }
+  .inner-wrap-header {
+    height: 40px !important;
   }
 }
 @media screen and (max-width: 376px) {
