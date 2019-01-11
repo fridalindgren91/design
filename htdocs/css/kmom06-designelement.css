@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04 (Theme dark).
+ * Stylesheet for design kmom06 - designelement.
  *
- * This stylesheet is for the design course and kmom02 where we use LESS.
+ * This stylesheet is for the design course and kmom05 where we use LESS.
  */
 /**
  * Normalize and reset the style.
@@ -4012,6 +4012,210 @@
 /**
  * Internal self contained modules, save in directory module/.
  */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+.figure {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  border: 2px solid #7f6300;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+.figure img {
+  max-width: 100%;
+  display: block;
+}
+.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+.figure figcaption p {
+  margin-top: 0;
+}
+.figure td img {
+  max-width: none;
+}
+.figure.left {
+  float: left;
+  margin-right: 8px;
+}
+.figure.right {
+  float: right;
+  margin-left: 8px;
+}
+.figure.center {
+  clear: both;
+  margin: auto;
+}
+.figure.center figcaption {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .figure.w50 {
+    width: 300px;
+  }
+  .figure.w25 {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .figure.w50 {
+    width: 225px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .figure.w50 {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .figure.w50 {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .figure.w50 {
+    min-width: 100%;
+  }
+  .figure.left,
+  .figure.right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
 /** 
  * Import the typographic grid
  */
@@ -4062,15 +4266,14 @@
  */
 html {
   overflow-y: scroll;
-  background-color: #d3d3d3;
+  background-color: rgba(255, 255, 255, 0.411);
   overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #d3d3d3;
-  font: 16px/1.5 'IM Fell English SC', serif;
+  font: 16px/1.5 'Thasadith', sans-serif;
 }
 .clearfix {
   clear: both;
@@ -4358,25 +4561,40 @@ footer {
 /**
  * General layout
  */
+h4 {
+  border-bottom: 1px solid black !important;
+}
+a {
+  color: #ff9f9f;
+}
+body {
+  background-image: url(../img/theme/dogs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 /**
  * Logo
  */
 .site-logo img {
   width: 50%;
-  padding-top: 0;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .site-logo-text a {
-  color: #d3d3d3;
+  color: #b3ffac;
+  font-family: 'Montez', cursive;
+  font-size: 40px;
 }
 /**
  * Header
  */
 .inner-wrap-header {
   max-width: 100%;
-  background-color: #535353;
-  height: 170px;
-  color: #d3d3d3;
-  font-family: 'Rock Salt', cursive;
+  background-color: rgba(0, 0, 0, 0.596);
+  height: 200px;
+  color: #ffffff;
+  font-family: 'Julius Sans One', sans-serif;
 }
 .region-header-col-1 {
   width: 20%;
@@ -4386,39 +4604,52 @@ footer {
   float: left;
 }
 /**
+ * Flash
+ */
+.region-flash {
+  display: none;
+}
+/**
  * Menu
  */
 .rm-max {
   display: none;
 }
 .rm-desktop li a {
-  background-color: #535353 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   text-transform: uppercase;
   padding: 15px;
+}
+.rm-desktop li a:hover {
+  text-decoration: none !important;
+  color: #b1ffb7 !important;
+}
+.my-navbar li ul {
+  background-color: black !important;
 }
 /**
  * Content
  */
 .wrap-all {
-  background-color: #636363;
+  background-color: rgba(0, 0, 0, 0.61);
   width: 70%;
   margin: 0 auto;
-  color: #d3d3d3;
+  color: white;
 }
 .outer-wrap-main {
   padding: 2%;
 }
 li a {
-  color: #d3d3d3;
+  color: #ffffff;
 }
 li a:hover {
-  text-decoration: underline;
+  color: #b1ffb7;
 }
 .region-main a {
-  color: #d3d3d3;
+  color: #ffffff;
 }
 .region-main a:hover {
-  text-decoration: underline;
+  color: #b1ffb7;
 }
 /**
  *
@@ -4426,8 +4657,10 @@ li a:hover {
  */
 .byline {
   width: 70%;
-  background-color: #a1a1a1;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  box-shadow: grey 1px 1px 2px 1px;
+  padding: 5px;
 }
 /**
  * Footer
@@ -4440,15 +4673,14 @@ li a:hover {
   width: 30%;
   padding: 13px;
   float: left;
-  border: 1px solid #b9b9b9;
   margin: 4px;
-  color: #d3d3d3;
+  color: #ffffff;
 }
 .site-footer {
-  color: #d3d3d3;
+  color: #ffffff;
 }
 .outer-wrap-footer {
-  background-color: #535353;
+  background-color: #000000;
   height: 100%;
 }
 /**
@@ -4832,7 +5064,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4956,7 +5188,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: 'IM Fell English SC', serif;
+  font-family: 'Thasadith', sans-serif;
 }
 code,
 samp {

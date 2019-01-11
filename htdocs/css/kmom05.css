@@ -4267,6 +4267,7 @@ figure.figure-codepen {
 html {
   overflow-y: scroll;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 body {
   margin: 0;

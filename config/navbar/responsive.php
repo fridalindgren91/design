@@ -31,6 +31,55 @@ return [
                         "url" => "redovisning/kmom02",
                         "title" => "Redovisning för kmom02.",
                     ],
+                    [
+                        "text" => "Kmom03",
+                        "url" => "redovisning/kmom03",
+                        "title" => "Redovisning för kmom03.",
+                    ],
+                    [
+                        "text" => "Kmom04",
+                        "url" => "redovisning/kmom04",
+                        "title" => "Redovisning för kmom04.",
+                    ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "redovisning/kmom05",
+                        "title" => "Redovisning för kmom05.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "redovisning/kmom06",
+                        "title" => "Redovisning för kmom06.",
+                    ],
+                ],
+            ],
+        ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapporter från kursmomenten.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "Kmom04",
+                        "url" => "rapport/fargschema",
+                        "title" => "Rapport för kmom04.",
+                    ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "rapport/laddningstid",
+                        "title" => "Rapport för kmom05.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "rapport/designprincip",
+                        "title" => "Rapport för kmom06.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "rapport/designelement",
+                        "title" => "Rapport för kmom06.",
+                    ],
                 ],
             ],
         ],
@@ -48,6 +97,16 @@ return [
             "text" => "Verktyg",
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
+        ],
+        [
+            "text" => "Testsida",
+            "url" => "test",
+            "title" => "Testsida",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Fridas blogg.",
         ],
     ],
 ];

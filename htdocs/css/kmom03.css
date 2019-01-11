@@ -4368,6 +4368,7 @@ template {
 html {
   overflow-y: scroll;
   background-color: #fff;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
